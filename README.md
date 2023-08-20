@@ -3,7 +3,8 @@ Simple Venn diagrams for Python 3, up to 4 sets (for more than 4 sets it is bett
 It will take as input a dictionary of 2-4 sets and produce a venn diagram and a txt file with element intersetions.
 
 Parameters:
-    ´out´ - disctionary of sets (required)
+
+´´´out´´´ - disctionary of sets (required)
 
 out - directory to output files, default current directory.
 
