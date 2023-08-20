@@ -4,7 +4,7 @@ It will take as input a dictionary of 2-4 sets and produce a venn diagram and a 
 
 **Installation:**
 
-    pip install venny4py==0.0.2
+    pip install venny4py==0.0.3
 
 
 **Parameters:**
