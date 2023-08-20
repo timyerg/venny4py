@@ -61,6 +61,9 @@ def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5):
         plt.rcParams['savefig.dpi'] = dpi #dpi in saved figure
         fig, ax = plt.subplots(1, 1, figsize=(size, size))
 
+    else:
+        ax = asax 
+        
     ax.set_xlim(0, 100)
     ax.set_ylim(0, 100)
     ax.axis('off')
