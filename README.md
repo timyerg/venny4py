@@ -2,6 +2,10 @@
 Simple Venn diagrams for Python 3, up to 4 sets (for more than 4 sets it is better to use UpSet plot).
 It will take as input a dictionary of 2-4 sets and produce a venn diagram and a txt file with element intersetions.
 
+**Installation:**
+  pip install venny4py==0.0.1
+
+
 **Parameters:**
 
 - ***sets*** - disctionary of sets (required)
