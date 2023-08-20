@@ -4,7 +4,7 @@ It will take as input a dictionary of 2-4 sets and produce a venn diagram and a 
 
 Parameters:
 
-´´´out´´´ - disctionary of sets (required)
+´´´out``` - disctionary of sets (required)
 
 out - directory to output files, default current directory.
 
