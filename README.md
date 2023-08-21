@@ -32,15 +32,10 @@ When installed, import:
 **Parameters:**
 
 - ***sets*** - disctionary of sets (required)
-
 - ***out*** - directory to output files, default current directory
-
 - ***asax*** - if diagram should be plotted as subplot, then provide matplotlib ax here. Default is 'False' which will plot new figure
-
 - ***ext*** - image extension, default is 'png'.
-
 - ***dpi*** - image resolution, default is 300 dpi.
-
 - ***size*** - image size in inches, default is 3.5. If using custom ax through "asax" parameter, specify approximate size of subplot in inches since fontsize is dependent on this parameter.
 
 
