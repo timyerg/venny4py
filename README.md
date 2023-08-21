@@ -6,6 +6,10 @@ It will take as input a dictionary of 2-4 sets and produce a venn diagram and a 
 
     pip install venny4py==0.0.3
 
+When installed, import:
+
+    from venny4py.venny4py import *
+
 
 **Parameters:**
 
