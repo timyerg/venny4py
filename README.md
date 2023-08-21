@@ -35,7 +35,7 @@ When installed, import:
 - ***size*** - image size in inches, default is 3.5. If using custom ax through "asax" parameter, specify approximate size of subplot in inches since fontsize is dependent on this parameter.
 
 
-Check "Examples.ipynb" to see some examples.
+Check "Examples.ipynb" https://github.com/timyerg/venny4py/blob/main/Examples.ipynb to see some examples.
 
 
 
