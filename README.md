@@ -9,6 +9,15 @@ It will take as input a dictionary of 2-4 sets and produce a venn diagram and a 
 When installed, import:
 
     from venny4py.venny4py import *
+    
+    #dict of sets
+    sets = {
+        'Set1': set(list("Harry Potter")),
+        'Set2': set(list("Hermione Granger")),
+        'Set3': set(list("Ron Weasley")),
+        'Set4': set(list("Severus Snape"))
+        
+    venny4py(sets=sets)
 
 
 **Parameters:**
