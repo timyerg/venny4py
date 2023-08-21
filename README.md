@@ -27,7 +27,7 @@ When installed, import:
 
 - ***out*** - directory to output files, default current directory
 
-- ***asax*** - if diagram should be plotted as subplot (matplotlib ax), default is 'False' which will plot new figure
+- ***asax*** - if diagram should be plotted as subplot, then provide matplotlib ax here. Default is 'False' which will plot new figure
 
 - ***ext*** - image extension, default is 'png'.
 
