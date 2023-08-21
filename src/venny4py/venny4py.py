@@ -1,4 +1,3 @@
-import numpy as np
 from itertools import combinations
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
