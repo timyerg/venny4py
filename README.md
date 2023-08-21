@@ -5,7 +5,6 @@ It will take as input a dictionary of 2-4 sets and produce a venn diagram and a 
 **Dependencies:**
 
 - numpy
-- pandas
 - itertools
 - matplotlib
 
