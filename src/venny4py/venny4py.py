@@ -60,7 +60,7 @@ def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5):
         fig, ax = plt.subplots(1, 1, figsize=(size, size))
 
     else:
-        ax = asax 
+        ax = asax
         
     ax.set_xlim(0, 100)
     ax.set_ylim(0, 100)
@@ -112,8 +112,8 @@ def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5):
                                   angle=0, ec='black', lw=lw))
 
         #annotate
-        xt = [12, 28, 88, 22, 78, 50, 50, 30, 70, 50] #x
-        yt = [80,  3, 80, 60, 60, 17, 70, 35, 35, 50] #y
+        xt = [12, 88, 28, 22, 78, 50, 50, 30, 70, 50] #x
+        yt = [80, 80,  3, 60, 60, 17, 70, 35, 35, 50] #y
         
 
         for j, s in enumerate(sets):
