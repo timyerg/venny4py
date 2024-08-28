@@ -41,7 +41,22 @@ def get_unique(shared):
 
 
 #plot Venn
-def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5, colors="bgrc", line_width=None, font_size=None, legend_cols=2, column_spacing=4, edge_color='black'):
+def venny4py(
+        sets=(),
+        out='./',
+        asax=False,
+        ext='png',
+        dpi=300,
+        size=3.5,
+        colors="bgrc",
+        line_width=None,
+        font_size=None,
+        legend_cols=2,
+        column_spacing=4,
+        edge_color='black'
+):
+    if len(sets) < 2 or len(sets) > 4:
+        raise ValueError('Number of sets must be 2, 3 or 4')
     shared = get_shared(sets)
     unique = get_unique(shared)
     ce = colors
