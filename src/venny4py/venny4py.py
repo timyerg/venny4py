@@ -41,14 +41,15 @@ def get_unique(shared):
 
 
 #plot Venn
-def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5):
+def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5, colors="bgrc", line_width=None, font_size=None, legend_cols=2, column_spacing=4, edge_color='black'):
     shared = get_shared(sets)
     unique = get_unique(shared)
-    ce = 'bgrc' #colors
-    lw = size*.12 #line width
-    fs = size*2 #font size
-    nc = 2 #legend cols
-    cs = 4 #columnspacing
+    ce = colors
+    lw = size*.12 if line_width is None else line_width
+    fs = size*2 if font_size is None else font_size
+    nc = legend_cols
+    cs = column_spacing
+    ec = edge_color
     
     with open(f'{out}/Intersections_{len(sets)}.txt', 'w') as f:
         for k, v in unique.items():
@@ -79,7 +80,7 @@ def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5):
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc=ce[i], 
                                   angle=ae[i], alpha=.3))
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc='None',
-                                  angle=ae[i], ec='black', lw=lw))
+                                  angle=ae[i], ec=edge_color, lw=lw))
 
         #annotate
         xt = [12, 32, 68, 88, 14, 34, 66, 86, 26, 28, 50, 50, 72, 74, 37, 60, 40, 63, 50] #x
@@ -109,7 +110,7 @@ def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5):
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc=ce[i], 
                                   angle=0, alpha=.3))
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc='None',
-                                  angle=0, ec='black', lw=lw))
+                                  angle=0, ec=edge_color, lw=lw))
 
         #annotate
         xt = [12, 88, 28, 22, 78, 50, 50, 30, 70, 50] #x
@@ -138,7 +139,7 @@ def venny4py(sets={}, out='./', asax=False, ext='png', dpi=300, size=3.5):
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc=ce[i], 
                                   angle=0, alpha=.3))
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc='None',
-                                  angle=0, ec='black', lw=lw))
+                                  angle=0, ec=edge_color, lw=lw))
 
         #annotate
         xt = [20, 80, 18, 82, 50] #x
