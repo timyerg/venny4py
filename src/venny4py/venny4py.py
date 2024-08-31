@@ -1,3 +1,4 @@
+import os.path
 from itertools import combinations
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -65,6 +66,8 @@ def venny4py(
     nc = legend_cols
     cs = column_spacing
     ec = edge_color
+
+    os.makedirs(out, exist_ok=True)
     
     with open(f'{out}/Intersections_{len(sets)}.txt', 'w') as f:
         for k, v in unique.items():
