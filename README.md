@@ -39,7 +39,7 @@ When installed, import:
 - ***line_width*** - control line width.
 - ***font_size*** - control font size.
 - ***legend_cols*** - number of legend columns, default is 2.
-- ***olumn_spacing*** - column spacing in legend, default is 4.
+- ***column_spacing*** - column spacing in legend, default is 4.
 - ***edge_color*** - edge colors, default is 'black'.
 
 
