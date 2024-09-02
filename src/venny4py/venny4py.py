@@ -98,7 +98,7 @@ def venny4py(
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc=ce[i], 
                                   angle=ae[i], alpha=.3))
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc='None',
-                                  angle=ae[i], ec=edge_color, lw=lw))
+                                  angle=ae[i], ec=ec, lw=lw))
 
         #annotate
         xt = [12, 32, 68, 88, 14, 34, 66, 86, 26, 28, 50, 50, 72, 74, 37, 60, 40, 63, 50] #x
@@ -128,7 +128,7 @@ def venny4py(
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc=ce[i], 
                                   angle=0, alpha=.3))
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc='None',
-                                  angle=0, ec=edge_color, lw=lw))
+                                  angle=0, ec=ec, lw=lw))
 
         #annotate
         xt = [12, 88, 28, 22, 78, 50, 50, 30, 70, 50] #x
@@ -157,7 +157,7 @@ def venny4py(
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc=ce[i], 
                                   angle=0, alpha=.3))
             ax.add_artist(Ellipse(xy=(xe[i], ye[i]), width=ew, height=eh, fc='None',
-                                  angle=0, ec=edge_color, lw=lw))
+                                  angle=0, ec=ec, lw=lw))
 
         #annotate
         xt = [20, 80, 18, 82, 50] #x
